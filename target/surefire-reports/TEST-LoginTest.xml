@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="LoginTest" time="33.968" tests="7" errors="3" skipped="0" failures="4">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Diplom\Diplom_3\target\test-classes;C:\Diplom\Diplom_3\target\classes;C:\Users\e.sarkisyan\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\e.sarkisyan\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\e.sarkisyan\.m2\repository\com\codeborne\selenide\5.23.2\selenide-5.23.2.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\e.sarkisyan\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\e.sarkisyan\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\e.sarkisyan\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.3\webdrivermanager-4.4.3.jar;C:\Users\e.sarkisyan\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\e.sarkisyan\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\e.sarkisyan\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1\httpclient5-5.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.1\httpcore5-5.1.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.1\httpcore5-h2-5.1.1.jar;C:\Users\e.sarkisyan\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\e.sarkisyan\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\e.sarkisyan\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\e.sarkisyan\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\e.sarkisyan\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\e.sarkisyan\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\e.sarkisyan\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\e.sarkisyan\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\e.sarkisyan\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\e.sarkisyan\.m2\repository\io\qameta\allure\allure-junit4\2.9.0\allure-junit4-2.9.0.jar;C:\Users\e.sarkisyan\.m2\repository\io\qameta\allure\allure-java-commons\2.9.0\allure-java-commons-2.9.0.jar;C:\Users\e.sarkisyan\.m2\repository\io\qameta\allure\allure-model\2.9.0\allure-model-2.9.0.jar;C:\Users\e.sarkisyan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.7\jackson-databind-2.9.7.jar;C:\Users\e.sarkisyan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\e.sarkisyan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.7\jackson-core-2.9.7.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\tika\tika-core\1.19.1\tika-core-1.19.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\aspectj\aspectjrt\1.9.1\aspectjrt-1.9.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\jooq\joor-java-8\0.9.9\joor-java-8-0.9.9.jar;C:\Users\e.sarkisyan\.m2\repository\io\rest-assured\rest-assured\5.0.0\rest-assured-5.0.0.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\e.sarkisyan\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\e.sarkisyan\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\e.sarkisyan\.m2\repository\io\rest-assured\json-path\5.0.0\json-path-5.0.0.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar;C:\Users\e.sarkisyan\.m2\repository\io\rest-assured\rest-assured-common\5.0.0\rest-assured-common-5.0.0.jar;C:\Users\e.sarkisyan\.m2\repository\io\rest-assured\xml-path\5.0.0\xml-path-5.0.0.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.14_9\bin"/>
+    <property name="sun.java.command" value="C:\Users\E92AC~1.SAR\AppData\Local\Temp\surefire10596417795309541815\surefirebooter15921567537282049124.jar C:\Users\e.sarkisyan\AppData\Local\Temp\surefire10596417795309541815 2022-06-12T17-44-59_614-jvmRun1 surefire2889575973942549480tmp surefire_010723827296078106530tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Diplom\Diplom_3\target\test-classes;C:\Diplom\Diplom_3\target\classes;C:\Users\e.sarkisyan\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\e.sarkisyan\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\e.sarkisyan\.m2\repository\com\codeborne\selenide\5.23.2\selenide-5.23.2.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\e.sarkisyan\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\e.sarkisyan\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\e.sarkisyan\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\e.sarkisyan\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.3\webdrivermanager-4.4.3.jar;C:\Users\e.sarkisyan\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\e.sarkisyan\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\e.sarkisyan\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1\httpclient5-5.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.1\httpcore5-5.1.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.1\httpcore5-h2-5.1.1.jar;C:\Users\e.sarkisyan\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\e.sarkisyan\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\e.sarkisyan\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\e.sarkisyan\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\e.sarkisyan\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\e.sarkisyan\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\e.sarkisyan\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\e.sarkisyan\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\e.sarkisyan\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\e.sarkisyan\.m2\repository\io\qameta\allure\allure-junit4\2.9.0\allure-junit4-2.9.0.jar;C:\Users\e.sarkisyan\.m2\repository\io\qameta\allure\allure-java-commons\2.9.0\allure-java-commons-2.9.0.jar;C:\Users\e.sarkisyan\.m2\repository\io\qameta\allure\allure-model\2.9.0\allure-model-2.9.0.jar;C:\Users\e.sarkisyan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.7\jackson-databind-2.9.7.jar;C:\Users\e.sarkisyan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\e.sarkisyan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.7\jackson-core-2.9.7.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\tika\tika-core\1.19.1\tika-core-1.19.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\aspectj\aspectjrt\1.9.1\aspectjrt-1.9.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\jooq\joor-java-8\0.9.9\joor-java-8-0.9.9.jar;C:\Users\e.sarkisyan\.m2\repository\io\rest-assured\rest-assured\5.0.0\rest-assured-5.0.0.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\e.sarkisyan\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\e.sarkisyan\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\e.sarkisyan\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\e.sarkisyan\.m2\repository\io\rest-assured\json-path\5.0.0\json-path-5.0.0.jar;C:\Users\e.sarkisyan\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar;C:\Users\e.sarkisyan\.m2\repository\io\rest-assured\rest-assured-common\5.0.0\rest-assured-common-5.0.0.jar;C:\Users\e.sarkisyan\.m2\repository\io\rest-assured\xml-path\5.0.0\xml-path-5.0.0.jar;"/>
+    <property name="allure.results.directory" value="C:\Diplom\Diplom_3\target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\e.sarkisyan"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk11.0.14_9"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Diplom\Diplom_3"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\E92AC~1.SAR\AppData\Local\Temp\surefire10596417795309541815\surefirebooter15921567537282049124.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.14+9-LTS"/>
+    <property name="user.name" value="e.sarkisyan"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.14.9.1"/>
+    <property name="localRepository" value="C:\Users\e.sarkisyan\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\E92AC~1.SAR\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.14"/>
+    <property name="user.dir" value="C:\Diplom\Diplom_3"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.14_9\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Amazon Corretto\jdk11.0.14_9\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Aladdin\eToken\PKIClient\x32;C:\Program Files\Aladdin\eToken\PKIClient\x64;C:\Program Files\Git\cmd;C:\Users\e.sarkisyan\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\apache-maven-3.8.4-bin\apache-maven-3.8.4\bin;C:\WebDriver\bin;C:\allure-commandline-2.9.0\allure-2.9.0\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\e.sarkisyan\AppData\Local\Microsoft\WindowsApps;C:\Users\e.sarkisyan\AppData\Local\GitHubDesktop\bin;C:\Users\e.sarkisyan\AppData\Local\GitHubDesktop\app-2.9.2\resources\app\git\cmd;C:\Users\e.sarkisyan\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.14+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="loginThroughForgotPasswordPageTest" classname="LoginTest" time="17.669">
+    <failure message="Element not found {By.xpath: //a[@class=&apos;Account_link__2ETsJ text text_type_main-medium text_color_inactive&apos;]}&#10;Expected: exist&#10;Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045138798.0.png&#10;Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045138798.0.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;Account_link__2ETsJ text text_type_main-medium text_color_inactive&apos;]&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.xpath: //a[@class='Account_link__2ETsJ text text_type_main-medium text_color_inactive']}
+Expected: exist
+Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045138798.0.png
+Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045138798.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='Account_link__2ETsJ text text_type_main-medium text_color_inactive']"}
+	at LoginTest.loginThroughForgotPasswordPageTest(LoginTest.java:98)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='Account_link__2ETsJ text text_type_main-medium text_color_inactive']"}
+  (Session info: chrome=100.0.4896.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PIX1BOOK114', ip: '10.0.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.160, chrome: {chromedriverVersion: 100.0.4896.143 (cbbca7ae97c..., userDataDir: C:\Users\E92AC~1.SAR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ec7456e166dd0658fa23d9377017ea7
+*** Element info: {Using=xpath, value=//a[@class='Account_link__2ETsJ text text_type_main-medium text_color_inactive']}
+	at LoginTest.loginThroughForgotPasswordPageTest(LoginTest.java:98)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 100.0.4896.143 (cbbca7ae97ca697e7529c8862971ef6e590e5528) on port 46969
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+июн. 12, 2022 5:45:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="loginThroughRegistrationPageTest" classname="LoginTest" time="5.461">
+    <failure message="Element not found {By.xpath: //input[@value=&apos;&apos;]}&#10;Expected: visible or transparent: visible or have css value opacity=0&#10;Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045149170.1.png&#10;Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045149170.1.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;&apos;]&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.xpath: //input[@value='']}
+Expected: visible or transparent: visible or have css value opacity=0
+Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045149170.1.png
+Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045149170.1.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='']"}
+	at LoginTest.maxSizeScreenConfiguration(LoginTest.java:31)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='']"}
+  (Session info: chrome=100.0.4896.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PIX1BOOK114', ip: '10.0.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.160, chrome: {chromedriverVersion: 100.0.4896.143 (cbbca7ae97c..., userDataDir: C:\Users\E92AC~1.SAR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ec7456e166dd0658fa23d9377017ea7
+*** Element info: {Using=xpath, value=//input[@value='']}
+	at LoginTest.maxSizeScreenConfiguration(LoginTest.java:31)
+</failure>
+  </testcase>
+  <testcase name="loginThroughRegistrationPageTest" classname="LoginTest" time="5.465">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at LoginTest.deleteUser(LoginTest.java:46)
+</error>
+  </testcase>
+  <testcase name="loginThroughMainPageTest" classname="LoginTest" time="5.399">
+    <failure message="Element not found {By.xpath: //input[@value=&apos;&apos;]}&#10;Expected: visible or transparent: visible or have css value opacity=0&#10;Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045154632.2.png&#10;Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045154632.2.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;&apos;]&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.xpath: //input[@value='']}
+Expected: visible or transparent: visible or have css value opacity=0
+Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045154632.2.png
+Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045154632.2.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='']"}
+	at LoginTest.maxSizeScreenConfiguration(LoginTest.java:31)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='']"}
+  (Session info: chrome=100.0.4896.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PIX1BOOK114', ip: '10.0.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.160, chrome: {chromedriverVersion: 100.0.4896.143 (cbbca7ae97c..., userDataDir: C:\Users\E92AC~1.SAR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ec7456e166dd0658fa23d9377017ea7
+*** Element info: {Using=xpath, value=//input[@value='']}
+	at LoginTest.maxSizeScreenConfiguration(LoginTest.java:31)
+</failure>
+  </testcase>
+  <testcase name="loginThroughMainPageTest" classname="LoginTest" time="5.401">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at LoginTest.deleteUser(LoginTest.java:46)
+</error>
+  </testcase>
+  <testcase name="loginThroughPersonallAccountButtonTest" classname="LoginTest" time="5.417">
+    <failure message="Element not found {By.xpath: //input[@value=&apos;&apos;]}&#10;Expected: visible or transparent: visible or have css value opacity=0&#10;Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045159973.3.png&#10;Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045159973.3.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;&apos;]&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.xpath: //input[@value='']}
+Expected: visible or transparent: visible or have css value opacity=0
+Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045159973.3.png
+Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045159973.3.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='']"}
+	at LoginTest.maxSizeScreenConfiguration(LoginTest.java:31)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='']"}
+  (Session info: chrome=100.0.4896.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PIX1BOOK114', ip: '10.0.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.160, chrome: {chromedriverVersion: 100.0.4896.143 (cbbca7ae97c..., userDataDir: C:\Users\E92AC~1.SAR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ec7456e166dd0658fa23d9377017ea7
+*** Element info: {Using=xpath, value=//input[@value='']}
+	at LoginTest.maxSizeScreenConfiguration(LoginTest.java:31)
+</failure>
+  </testcase>
+  <testcase name="loginThroughPersonallAccountButtonTest" classname="LoginTest" time="5.42">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at LoginTest.deleteUser(LoginTest.java:46)
+</error>
+  </testcase>
+</testsuite>

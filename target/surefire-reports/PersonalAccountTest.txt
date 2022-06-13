@@ -1,0 +1,54 @@
+-------------------------------------------------------------------------------
+Test set: PersonalAccountTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 2, Skipped: 0, Time elapsed: 21.13 s <<< FAILURE! - in PersonalAccountTest
+exitFromPersonallAccountTest(PersonalAccountTest)  Time elapsed: 5.41 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.xpath: //input[@value='']}
+Expected: visible or transparent: visible or have css value opacity=0
+Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045309825.4.png
+Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045309825.4.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='']"}
+	at PersonalAccountTest.maxSizeScreenConfiguration(PersonalAccountTest.java:28)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='']"}
+  (Session info: chrome=100.0.4896.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PIX1BOOK114', ip: '10.0.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.160, chrome: {chromedriverVersion: 100.0.4896.143 (cbbca7ae97c..., userDataDir: C:\Users\E92AC~1.SAR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:57505}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1000a55e088ddae89293ae9b72ebdf6
+*** Element info: {Using=xpath, value=//input[@value='']}
+	at PersonalAccountTest.maxSizeScreenConfiguration(PersonalAccountTest.java:28)
+
+exitFromPersonallAccountTest(PersonalAccountTest)  Time elapsed: 5.411 s  <<< ERROR!
+java.lang.NullPointerException
+	at PersonalAccountTest.deleteUser(PersonalAccountTest.java:43)
+
+transitionToPersonallAccountTest(PersonalAccountTest)  Time elapsed: 5.54 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.xpath: //input[@value='']}
+Expected: visible or transparent: visible or have css value opacity=0
+Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045315126.5.png
+Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045315126.5.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='']"}
+	at PersonalAccountTest.maxSizeScreenConfiguration(PersonalAccountTest.java:28)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='']"}
+  (Session info: chrome=100.0.4896.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PIX1BOOK114', ip: '10.0.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.160, chrome: {chromedriverVersion: 100.0.4896.143 (cbbca7ae97c..., userDataDir: C:\Users\E92AC~1.SAR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:57505}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1000a55e088ddae89293ae9b72ebdf6
+*** Element info: {Using=xpath, value=//input[@value='']}
+	at PersonalAccountTest.maxSizeScreenConfiguration(PersonalAccountTest.java:28)
+
+transitionToPersonallAccountTest(PersonalAccountTest)  Time elapsed: 5.542 s  <<< ERROR!
+java.lang.NullPointerException
+	at PersonalAccountTest.deleteUser(PersonalAccountTest.java:43)
+
