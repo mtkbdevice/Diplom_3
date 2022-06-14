@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: PersonalAccountYandexBrowserTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 27.475 s <<< FAILURE! - in PersonalAccountYandexBrowserTest
-transitionToBurgerConstructorTest(PersonalAccountYandexBrowserTest)  Time elapsed: 8.455 s  <<< ERROR!
-java.lang.NullPointerException
-	at PersonalAccountYandexBrowserTest.deleteUser(PersonalAccountYandexBrowserTest.java:48)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.408 s - in PersonalAccountYandexBrowserTest

@@ -1,5 +1,6 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.WebDriverRunner;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -7,9 +8,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
-import ru.stellarburgers.LoginPageSelenide;
-import ru.stellarburgers.RegisterPageSelenide;
-import ru.stellarburgers.SuccessfullUserLoginData;
+import ru.model.SuccessfullUserLoginData;
+import ru.stellarburgers.pageobjects.LoginPageObject;
+import ru.stellarburgers.pageobjects.RegisterPageObject;
 
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.setWebDriver;
@@ -21,7 +22,7 @@ public class RegistrationYandexBrowserTest {
     private String password;
     private String name;
 
-    RegisterPageSelenide registerPageSelenide = page(RegisterPageSelenide.class);
+    RegisterPageObject registerPageObject = page(RegisterPageObject.class);
 
     @Before
     public void maxSizeScreenConfiguration(){
@@ -32,7 +33,7 @@ public class RegistrationYandexBrowserTest {
         email = RandomStringUtils.randomAlphabetic(8) + "@mail.ru";
         password = RandomStringUtils.randomAlphabetic(8);
         name = RandomStringUtils.randomAlphabetic(8);
-        RegisterPageSelenide registerPageSelenide = open("https://stellarburgers.nomoreparties.site/register", RegisterPageSelenide.class);
+        RegisterPageObject registerPageSelenide = open("https://stellarburgers.nomoreparties.site/register", RegisterPageObject.class);
     }
 
     @After
@@ -60,16 +61,18 @@ public class RegistrationYandexBrowserTest {
     }
 
     @Test
+    @DisplayName("Успешная регистрация")
     public void successfullRegistrationTest(){
-        registerPageSelenide.registration(name, email, password);
-        LoginPageSelenide loginPageSelenide = page(LoginPageSelenide.class);
-        loginPageSelenide.getLoginBlock().should(Condition.exist);
+        registerPageObject.registration(name, email, password);
+        LoginPageObject loginPageObject = page(LoginPageObject.class);
+        loginPageObject.getLoginBlock().should(Condition.exist);
     }
 
     @Test
+    @DisplayName("Регистрация с не правильной длинной пароля")
     public void registrationWrongLenghtPasswordTest(){
         password = RandomStringUtils.randomAlphabetic(5);
-        registerPageSelenide.registration(name, email, RandomStringUtils.randomAlphabetic(5));
-        registerPageSelenide.getNamePlaceHolder().should(Condition.exist);
+        registerPageObject.registration(name, email, RandomStringUtils.randomAlphabetic(5));
+        registerPageObject.getNamePlaceHolder().should(Condition.exist);
     }
 }

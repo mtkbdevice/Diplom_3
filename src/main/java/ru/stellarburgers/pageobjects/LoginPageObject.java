@@ -1,10 +1,11 @@
-package ru.stellarburgers;
+package ru.stellarburgers.pageobjects;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class LoginPageSelenide {
+public class LoginPageObject {
 
     //локатор поля ввода email
     @FindBy(how = How.XPATH, using = "//input[@name='name']")
@@ -23,21 +24,25 @@ public class LoginPageSelenide {
     private SelenideElement loginBlock;
 
     //заполнение поля email
+    @Step("Заполнение поля email")
     public void setEmail(String email){
         emailHolder.setValue(email);
     }
 
     //заполнение поля password
+    @Step("Заполнение поля password")
     public void setPassword(String password){
         passwordHolder.setValue(password);
     }
 
     //клик по кнопке логина
+    @Step("Клик по кнопке логина")
     public void loginButtonClick(){
         loginButton.click();
     }
 
     //метод логина
+    @Step("Логин пользователя")
     public void login(String email, String password){
         setEmail(email);
         setPassword(password);
@@ -45,12 +50,15 @@ public class LoginPageSelenide {
     }
 
     //метод получение  кнопки логина
+    @Step("Получение кнопки логина")
     public SelenideElement getLoginButton(){
         return loginButton;
     }
 
     //метод получения блока с полями для логина
+    @Step("Получение блока с полями для логина")
     public SelenideElement getLoginBlock(){
         return loginBlock;
     }
+
 }

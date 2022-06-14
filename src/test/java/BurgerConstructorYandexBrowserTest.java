@@ -1,17 +1,18 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.WebDriverRunner;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
-import ru.stellarburgers.MainPageSelenide;
+import ru.stellarburgers.pageobjects.MainPageObject;
 
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.setWebDriver;
 
 public class BurgerConstructorYandexBrowserTest {
 
-    MainPageSelenide mainPageSelenide = page(MainPageSelenide.class);
+    MainPageObject mainPageObject = page(MainPageObject.class);
 
     @Before
     public void maxSizeScreenConfiguration() {
@@ -19,7 +20,7 @@ public class BurgerConstructorYandexBrowserTest {
         ChromeDriver driver = new ChromeDriver();
         setWebDriver(driver);
         WebDriverRunner.getWebDriver().manage().window().maximize();
-        MainPageSelenide mainPageSelenide = open("https://stellarburgers.nomoreparties.site/", MainPageSelenide.class);
+        MainPageObject mainPageSelenide = open("https://stellarburgers.nomoreparties.site/", MainPageObject.class);
     }
 
     @After
@@ -28,21 +29,24 @@ public class BurgerConstructorYandexBrowserTest {
     }
 
     @Test
+    @DisplayName("Переход в раздел булок в конструкторе")
     public void transferToBunsTest(){
-        mainPageSelenide.selectСonstructorSection(2);
-        mainPageSelenide.selectСonstructorSection(0);
-        mainPageSelenide.getCratorBun().shouldBe(Condition.visible);
+        mainPageObject.selectСonstructorSection(2);
+        mainPageObject.selectСonstructorSection(0);
+        mainPageObject.getCratorBun().shouldBe(Condition.visible);
     }
 
     @Test
+    @DisplayName("Переход в раздел соусов в конструкторе")
     public void transferToSoucesTest(){
-        mainPageSelenide.selectСonstructorSection(1);
-        mainPageSelenide.getTraditionalGalacticSauce().shouldBe(Condition.visible);
+        mainPageObject.selectСonstructorSection(1);
+        mainPageObject.getTraditionalGalacticSauce().shouldBe(Condition.visible);
     }
 
     @Test
+    @DisplayName("Переход в раздел начинок в конструкторе")
     public void transferToFillingsTest(){
-        mainPageSelenide.selectСonstructorSection(2);
-        mainPageSelenide.getLuminescentFillet().shouldBe(Condition.visible);
+        mainPageObject.selectСonstructorSection(2);
+        mainPageObject.getLuminescentFillet().shouldBe(Condition.visible);
     }
 }

@@ -1,5 +1,6 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.WebDriverRunner;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -7,7 +8,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
-import ru.stellarburgers.*;
+import ru.model.SuccessfullUserLoginData;
+import ru.stellarburgers.pageobjects.*;
 
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.setWebDriver;
@@ -27,8 +29,8 @@ public class LoginYandexBrowserTest {
         email = RandomStringUtils.randomAlphabetic(8) + "@mail.ru";
         password = RandomStringUtils.randomAlphabetic(8);
         name = RandomStringUtils.randomAlphabetic(8);
-        RegisterPageSelenide registerPageSelenide = open("https://stellarburgers.nomoreparties.site/register", RegisterPageSelenide.class);
-        registerPageSelenide.registration(name, email, password);
+        RegisterPageObject registerPageObject = open("https://stellarburgers.nomoreparties.site/register", RegisterPageObject.class);
+        registerPageObject.registration(name, email, password);
     }
 
     @After
@@ -54,48 +56,52 @@ public class LoginYandexBrowserTest {
     }
 
     @Test
+    @DisplayName("Логин через главную страницу")
     public void loginThroughMainPageTest(){
-        MainPageSelenide mainPageSelenide = open("https://stellarburgers.nomoreparties.site/", MainPageSelenide.class);
-        mainPageSelenide.signInButtonClick();
-        LoginPageSelenide loginPageSelenide = page(LoginPageSelenide.class);
-        loginPageSelenide.login(email, password);
-        mainPageSelenide.personalAccountButtonClick();
-        ProfilePageSelenide profilePageSelenide = page(ProfilePageSelenide.class);
-        profilePageSelenide.getStoryOfOrdersButton().should(Condition.exist);
+        MainPageObject mainPageObject = open("https://stellarburgers.nomoreparties.site/", MainPageObject.class);
+        mainPageObject.signInButtonClick();
+        LoginPageObject loginPageObject = page(LoginPageObject.class);
+        loginPageObject.login(email, password);
+        mainPageObject.personalAccountButtonClick();
+        ProfilePageObject profilePageObject = page(ProfilePageObject.class);
+        profilePageObject.getStoryOfOrdersButton().should(Condition.exist);
     }
 
     @Test
+    @DisplayName("Логин через кнопку личный кабинет")
     public void loginThroughPersonallAccountButtonTest(){
-        MainPageSelenide mainPageSelenide = open("https://stellarburgers.nomoreparties.site/", MainPageSelenide.class);
-        mainPageSelenide.personalAccountButtonClick();
-        LoginPageSelenide loginPageSelenide = page(LoginPageSelenide.class);
-        loginPageSelenide.login(email, password);
-        mainPageSelenide.personalAccountButtonClick();
-        ProfilePageSelenide profilePageSelenide = page(ProfilePageSelenide.class);
-        profilePageSelenide.getStoryOfOrdersButton().should(Condition.exist);
+        MainPageObject mainPageObject = open("https://stellarburgers.nomoreparties.site/", MainPageObject.class);
+        mainPageObject.personalAccountButtonClick();
+        LoginPageObject loginPageObject = page(LoginPageObject.class);
+        loginPageObject.login(email, password);
+        mainPageObject.personalAccountButtonClick();
+        ProfilePageObject profilePageObject = page(ProfilePageObject.class);
+        profilePageObject.getStoryOfOrdersButton().should(Condition.exist);
     }
 
     @Test
+    @DisplayName("Логин из окна регистрации")
     public void  loginThroughRegistrationPageTest(){
-        RegisterPageSelenide registerPageSelenide = open("https://stellarburgers.nomoreparties.site/register", RegisterPageSelenide.class);
-        registerPageSelenide.loginButtonClick();
-        LoginPageSelenide loginPageSelenide = page(LoginPageSelenide.class);
-        loginPageSelenide.login(email, password);
-        MainPageSelenide mainPageSelenide = page(MainPageSelenide.class);
-        mainPageSelenide.personalAccountButtonClick();
-        ProfilePageSelenide profilePageSelenide = page(ProfilePageSelenide.class);
-        profilePageSelenide.getStoryOfOrdersButton().should(Condition.exist);
+        RegisterPageObject registerPageObject = open("https://stellarburgers.nomoreparties.site/register", RegisterPageObject.class);
+        registerPageObject.loginButtonClick();
+        LoginPageObject loginPageObject = page(LoginPageObject.class);
+        loginPageObject.login(email, password);
+        MainPageObject mainPageObject = page(MainPageObject.class);
+        mainPageObject.personalAccountButtonClick();
+        ProfilePageObject profilePageObject = page(ProfilePageObject.class);
+        profilePageObject.getStoryOfOrdersButton().should(Condition.exist);
     }
 
     @Test
+    @DisplayName("Логин через окно восстановления пароля")
     public void loginThroughForgotPasswordPageTest(){
-        ForgotPasswordPageSelenide forgotPasswordPageSelenide = open("https://stellarburgers.nomoreparties.site/forgot-password", ForgotPasswordPageSelenide.class);
+        ForgotPasswordPageObject forgotPasswordPageSelenide = open("https://stellarburgers.nomoreparties.site/forgot-password", ForgotPasswordPageObject.class);
         forgotPasswordPageSelenide.loginButtonClick();
-        LoginPageSelenide loginPageSelenide = page(LoginPageSelenide.class);
-        loginPageSelenide.login(email, password);
-        MainPageSelenide mainPageSelenide = page(MainPageSelenide.class);
-        mainPageSelenide.personalAccountButtonClick();
-        ProfilePageSelenide profilePageSelenide = page(ProfilePageSelenide.class);
-        profilePageSelenide.getStoryOfOrdersButton().should(Condition.exist);
+        LoginPageObject loginPageObject = page(LoginPageObject.class);
+        loginPageObject.login(email, password);
+        MainPageObject mainPageObject = page(MainPageObject.class);
+        mainPageObject.personalAccountButtonClick();
+        ProfilePageObject profilePageObject = page(ProfilePageObject.class);
+        profilePageObject.getStoryOfOrdersButton().should(Condition.exist);
     }
 }

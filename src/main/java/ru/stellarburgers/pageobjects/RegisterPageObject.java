@@ -1,12 +1,11 @@
-package ru.stellarburgers;
+package ru.stellarburgers.pageobjects;
 
-import com.codeborne.selenide.Selectors;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class RegisterPageSelenide {
+public class RegisterPageObject {
 
     //локатор поля ввода имени
     @FindBy(how = How.XPATH, using = "//input[@name='name']")
@@ -15,7 +14,6 @@ public class RegisterPageSelenide {
     //локатор поля ввода электронной почты
     @FindBy(how = How.XPATH, using = "//input[@value='']")
     private SelenideElement emailPlaceHolder;
-
 
     //локатор поля ввода пароля
     @FindBy(how = How.XPATH, using = "//input[@type='password']")
@@ -30,21 +28,25 @@ public class RegisterPageSelenide {
     private SelenideElement loginButton;
 
     //заполнение поля имени
+    @Step("Заполнение поля имени")
     public void setName(String name){
         namePlaceHolder.setValue(name);
     }
 
     //заполнение поля электронной почты
+    @Step("Заполнение поля электронной почты")
     public void setEmail(String email){
         emailPlaceHolder.setValue(email);
     }
 
     //заполнение поля пароля
+    @Step("Заполнение поля пароля")
     public void setPassword(String password){
         passwordPlaceHolder.setValue(password);
     }
 
     //заполнение всех полей для регистрации
+    @Step("Заполнение всех полей для регистрации")
     public void registration(String name, String email, String password){
         setName(name);
         setEmail(email);
@@ -52,18 +54,22 @@ public class RegisterPageSelenide {
         registrationButtonClick();
     }
 
-    //клик по кнопку регистрации
+    //клик по кнопке регистрации
+    @Step("Клик по кнопке регистрации")
     public void registrationButtonClick(){
         registrationButton.click();
     }
 
     //клик по кнопке логина
+    @Step("Клик по кнопке логина")
     public void loginButtonClick(){
         loginButton.click();
     }
 
     //получение поля ввода имени
+    @Step("Получение поля ввода имени")
     public SelenideElement getNamePlaceHolder(){
         return namePlaceHolder;
     }
+
 }

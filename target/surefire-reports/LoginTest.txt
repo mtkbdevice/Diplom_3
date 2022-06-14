@@ -1,34 +1,34 @@
 -------------------------------------------------------------------------------
 Test set: LoginTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 4, Errors: 3, Skipped: 0, Time elapsed: 33.968 s <<< FAILURE! - in LoginTest
-loginThroughForgotPasswordPageTest(LoginTest)  Time elapsed: 17.669 s  <<< FAILURE!
+Tests run: 7, Failures: 4, Errors: 3, Skipped: 0, Time elapsed: 38.433 s <<< FAILURE! - in LoginTest
+loginThroughForgotPasswordPageTest(LoginTest)  Time elapsed: 17.381 s  <<< FAILURE!
 com.codeborne.selenide.ex.ElementNotFound: 
 Element not found {By.xpath: //a[@class='Account_link__2ETsJ text text_type_main-medium text_color_inactive']}
 Expected: exist
-Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045138798.0.png
-Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045138798.0.html
+Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655210525382.0.png
+Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655210525382.0.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='Account_link__2ETsJ text text_type_main-medium text_color_inactive']"}
-	at LoginTest.loginThroughForgotPasswordPageTest(LoginTest.java:98)
+	at LoginTest.loginThroughForgotPasswordPageTest(LoginTest.java:102)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='Account_link__2ETsJ text text_type_main-medium text_color_inactive']"}
   (Session info: chrome=100.0.4896.160)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PIX1BOOK114', ip: '10.0.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+System info: host: 'PIX1BOOK114', ip: '10.131.2.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.160, chrome: {chromedriverVersion: 100.0.4896.143 (cbbca7ae97c..., userDataDir: C:\Users\E92AC~1.SAR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8ec7456e166dd0658fa23d9377017ea7
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.160, chrome: {chromedriverVersion: 100.0.4896.143 (cbbca7ae97c..., userDataDir: C:\Users\E92AC~1.SAR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e2f07692dfbb44bc657188b627406e0
 *** Element info: {Using=xpath, value=//a[@class='Account_link__2ETsJ text text_type_main-medium text_color_inactive']}
-	at LoginTest.loginThroughForgotPasswordPageTest(LoginTest.java:98)
+	at LoginTest.loginThroughForgotPasswordPageTest(LoginTest.java:102)
 
-loginThroughRegistrationPageTest(LoginTest)  Time elapsed: 5.461 s  <<< FAILURE!
+loginThroughRegistrationPageTest(LoginTest)  Time elapsed: 6.717 s  <<< FAILURE!
 com.codeborne.selenide.ex.ElementNotFound: 
 Element not found {By.xpath: //input[@value='']}
 Expected: visible or transparent: visible or have css value opacity=0
-Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045149170.1.png
-Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045149170.1.html
+Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655210536126.1.png
+Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655210536126.1.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='']"}
 	at LoginTest.maxSizeScreenConfiguration(LoginTest.java:31)
@@ -37,23 +37,23 @@ no such element: Unable to locate element: {"method":"xpath","selector":"//input
   (Session info: chrome=100.0.4896.160)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PIX1BOOK114', ip: '10.0.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+System info: host: 'PIX1BOOK114', ip: '10.131.2.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.160, chrome: {chromedriverVersion: 100.0.4896.143 (cbbca7ae97c..., userDataDir: C:\Users\E92AC~1.SAR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8ec7456e166dd0658fa23d9377017ea7
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.160, chrome: {chromedriverVersion: 100.0.4896.143 (cbbca7ae97c..., userDataDir: C:\Users\E92AC~1.SAR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e2f07692dfbb44bc657188b627406e0
 *** Element info: {Using=xpath, value=//input[@value='']}
 	at LoginTest.maxSizeScreenConfiguration(LoginTest.java:31)
 
-loginThroughRegistrationPageTest(LoginTest)  Time elapsed: 5.465 s  <<< ERROR!
+loginThroughRegistrationPageTest(LoginTest)  Time elapsed: 6.72 s  <<< ERROR!
 java.lang.NullPointerException
 	at LoginTest.deleteUser(LoginTest.java:46)
 
-loginThroughMainPageTest(LoginTest)  Time elapsed: 5.399 s  <<< FAILURE!
+loginThroughMainPageTest(LoginTest)  Time elapsed: 7.401 s  <<< FAILURE!
 com.codeborne.selenide.ex.ElementNotFound: 
 Element not found {By.xpath: //input[@value='']}
 Expected: visible or transparent: visible or have css value opacity=0
-Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045154632.2.png
-Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045154632.2.html
+Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655210543104.2.png
+Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655210543104.2.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='']"}
 	at LoginTest.maxSizeScreenConfiguration(LoginTest.java:31)
@@ -62,23 +62,23 @@ no such element: Unable to locate element: {"method":"xpath","selector":"//input
   (Session info: chrome=100.0.4896.160)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PIX1BOOK114', ip: '10.0.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+System info: host: 'PIX1BOOK114', ip: '10.131.2.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.160, chrome: {chromedriverVersion: 100.0.4896.143 (cbbca7ae97c..., userDataDir: C:\Users\E92AC~1.SAR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8ec7456e166dd0658fa23d9377017ea7
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.160, chrome: {chromedriverVersion: 100.0.4896.143 (cbbca7ae97c..., userDataDir: C:\Users\E92AC~1.SAR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e2f07692dfbb44bc657188b627406e0
 *** Element info: {Using=xpath, value=//input[@value='']}
 	at LoginTest.maxSizeScreenConfiguration(LoginTest.java:31)
 
-loginThroughMainPageTest(LoginTest)  Time elapsed: 5.401 s  <<< ERROR!
+loginThroughMainPageTest(LoginTest)  Time elapsed: 7.403 s  <<< ERROR!
 java.lang.NullPointerException
 	at LoginTest.deleteUser(LoginTest.java:46)
 
-loginThroughPersonallAccountButtonTest(LoginTest)  Time elapsed: 5.417 s  <<< FAILURE!
+loginThroughPersonallAccountButtonTest(LoginTest)  Time elapsed: 6.908 s  <<< FAILURE!
 com.codeborne.selenide.ex.ElementNotFound: 
 Element not found {By.xpath: //input[@value='']}
 Expected: visible or transparent: visible or have css value opacity=0
-Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045159973.3.png
-Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655045159973.3.html
+Screenshot: file:/C:/Diplom/Diplom_3/build/reports/tests/1655210550267.3.png
+Page source: file:/C:/Diplom/Diplom_3/build/reports/tests/1655210550267.3.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='']"}
 	at LoginTest.maxSizeScreenConfiguration(LoginTest.java:31)
@@ -87,14 +87,14 @@ no such element: Unable to locate element: {"method":"xpath","selector":"//input
   (Session info: chrome=100.0.4896.160)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PIX1BOOK114', ip: '10.0.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+System info: host: 'PIX1BOOK114', ip: '10.131.2.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.160, chrome: {chromedriverVersion: 100.0.4896.143 (cbbca7ae97c..., userDataDir: C:\Users\E92AC~1.SAR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:56411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8ec7456e166dd0658fa23d9377017ea7
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.160, chrome: {chromedriverVersion: 100.0.4896.143 (cbbca7ae97c..., userDataDir: C:\Users\E92AC~1.SAR\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e2f07692dfbb44bc657188b627406e0
 *** Element info: {Using=xpath, value=//input[@value='']}
 	at LoginTest.maxSizeScreenConfiguration(LoginTest.java:31)
 
-loginThroughPersonallAccountButtonTest(LoginTest)  Time elapsed: 5.42 s  <<< ERROR!
+loginThroughPersonallAccountButtonTest(LoginTest)  Time elapsed: 6.908 s  <<< ERROR!
 java.lang.NullPointerException
 	at LoginTest.deleteUser(LoginTest.java:46)
 

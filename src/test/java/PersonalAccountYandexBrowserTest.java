@@ -1,5 +1,6 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.WebDriverRunner;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -7,7 +8,11 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
-import ru.stellarburgers.*;
+import ru.model.SuccessfullUserLoginData;
+import ru.stellarburgers.pageobjects.LoginPageObject;
+import ru.stellarburgers.pageobjects.MainPageObject;
+import ru.stellarburgers.pageobjects.ProfilePageObject;
+import ru.stellarburgers.pageobjects.RegisterPageObject;
 
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.setWebDriver;
@@ -28,8 +33,8 @@ public class PersonalAccountYandexBrowserTest {
         email = RandomStringUtils.randomAlphabetic(8) + "@mail.ru";
         password = RandomStringUtils.randomAlphabetic(8);
         name = RandomStringUtils.randomAlphabetic(8);
-        RegisterPageSelenide registerPageSelenide = open("https://stellarburgers.nomoreparties.site/register", RegisterPageSelenide.class);
-        registerPageSelenide.registration(name, email, password);
+        RegisterPageObject registerPageObject = open("https://stellarburgers.nomoreparties.site/register", RegisterPageObject.class);
+        registerPageObject.registration(name, email, password);
     }
 
     @After
@@ -55,37 +60,40 @@ public class PersonalAccountYandexBrowserTest {
     }
 
     @Test
+    @DisplayName("Переход в личный кабинет")
     public void transitionToPersonallAccountTest(){
-        MainPageSelenide mainPageSelenide = open("https://stellarburgers.nomoreparties.site/", MainPageSelenide.class);
-        mainPageSelenide.signInButtonClick();
-        LoginPageSelenide loginPageSelenide = page(LoginPageSelenide.class);
-        loginPageSelenide.login(email, password);
-        mainPageSelenide.personalAccountButtonClick();
-        ProfilePageSelenide profilePageSelenide = page(ProfilePageSelenide.class);
-        profilePageSelenide.getStoryOfOrdersButton().should(Condition.exist);
+        MainPageObject mainPageObject = open("https://stellarburgers.nomoreparties.site/", MainPageObject.class);
+        mainPageObject.signInButtonClick();
+        LoginPageObject loginPageObject = page(LoginPageObject.class);
+        loginPageObject.login(email, password);
+        mainPageObject.personalAccountButtonClick();
+        ProfilePageObject profilePageObject = page(ProfilePageObject.class);
+        profilePageObject.getStoryOfOrdersButton().should(Condition.exist);
     }
 
     @Test
+    @DisplayName("Переход к конструктору бургеров из личного кабинета")
     public void transitionToBurgerConstructorTest(){
-        MainPageSelenide mainPageSelenide = open("https://stellarburgers.nomoreparties.site/", MainPageSelenide.class);
-        mainPageSelenide.signInButtonClick();
-        LoginPageSelenide loginPageSelenide = page(LoginPageSelenide.class);
-        loginPageSelenide.login(email, password);
-        mainPageSelenide.personalAccountButtonClick();
-        ProfilePageSelenide profilePageSelenide = page(ProfilePageSelenide.class);
-        profilePageSelenide.contrusctorButtonClick();
-        mainPageSelenide.getCratorBun().should(Condition.exist);
+        MainPageObject mainPageObject = open("https://stellarburgers.nomoreparties.site/", MainPageObject.class);
+        mainPageObject.signInButtonClick();
+        LoginPageObject loginPageObject = page(LoginPageObject.class);
+        loginPageObject.login(email, password);
+        mainPageObject.personalAccountButtonClick();
+        ProfilePageObject profilePageObject = page(ProfilePageObject.class);
+        profilePageObject.contrusctorButtonClick();
+        mainPageObject.getCratorBun().should(Condition.exist);
     }
 
     @Test
+    @DisplayName("Выход из личного кабинета")
     public void exitFromPersonallAccountTest(){
-        MainPageSelenide mainPageSelenide = open("https://stellarburgers.nomoreparties.site/", MainPageSelenide.class);
-        mainPageSelenide.signInButtonClick();
-        LoginPageSelenide loginPageSelenide = page(LoginPageSelenide.class);
-        loginPageSelenide.login(email, password);
-        mainPageSelenide.personalAccountButtonClick();
-        ProfilePageSelenide profilePageSelenide = page(ProfilePageSelenide.class);
-        profilePageSelenide.exitButtonClick();
-        loginPageSelenide.getLoginBlock().should(Condition.exist);
+        MainPageObject mainPageObject = open("https://stellarburgers.nomoreparties.site/", MainPageObject.class);
+        mainPageObject.signInButtonClick();
+        LoginPageObject loginPageObject = page(LoginPageObject.class);
+        loginPageObject.login(email, password);
+        mainPageObject.personalAccountButtonClick();
+        ProfilePageObject profilePageObject = page(ProfilePageObject.class);
+        profilePageObject.exitButtonClick();
+        loginPageObject.getLoginBlock().should(Condition.exist);
     }
 }

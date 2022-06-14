@@ -1,4 +1,4 @@
-package ru.stellarburgers;
+package ru.model;
 
 public class SuccessfullUserLoginData {
 
